@@ -13,14 +13,14 @@
 
 *Assumptions* - Tokens = chars
 
-*Process*
-1)Load the dataset
-2)Create a list of all unique characters (65 in this case)
-3)Make an encoder & decoder for char <-> int manipulations
-4)Train-Test split (90-10 here)
-5)Set your batch (B) & block size (T)  (Block size = context length)
-6)Make a function to get randomly B(batch) no. of T(block) sized test snippets & return a BxT matrix
-7)Make a function to estimate loss of model averaging over 'eval-iters' no. of seq.
+*Process* 
+1) Load the dataset
+2) Create a list of all unique characters (65 in this case)
+3) Make an encoder & decoder for char <-> int manipulations
+4) Train-Test split (90-10 here)
+5) Set your batch (B) & block size (T)  (Block size = context length)
+6) Make a function to get randomly B(batch) no. of T(block) sized test snippets & return a BxT matrix
+7) Make a function to estimate loss of model averaging over 'eval-iters' no. of seq.
 8) Define a self-attention head:
    - initialize key,query,value matrix of NxH dimension (N-no. of embedding , H-head size)
    - Also make a upper triangular matrix of TxT dimesion
