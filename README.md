@@ -1,7 +1,7 @@
 # Tiny_GPT
  This is a very basic LLM project trained on tiny shakeshphere
 
- *Goal* - Create a Language Model based on transformers which autocompletes the given input upto s gien token length.
+ *Goal* - Create a Language Model based on transformers which autocompletes the given input upto s given token length.
 
  *Inputs* - A sentence , no. of tokens user wants to be autocompleted
 
